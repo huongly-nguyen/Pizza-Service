@@ -1,18 +1,4 @@
-# EWA Docker Setup
-You know about [Docker](https://www.docker.com) and Docker is running on your system? You do not want to mess up your system by installing a web server and all the fancy software you need for EWA?
-
-In that case you can simply start several docker containers and you are all set for EWA.
-
-If you succeed in starting the docker containers you will get:
-- Several former examinations - the examination as pdf, the code and the executeable code 
-- a nice way to play and deploy webpages with php, html, css etc. That is exactly what you need for the EWA lab.
-- all demos from the lecture fully functional - just use the links in the pdf of the slides while running the containers
-
-*Note: This setup is given to you as it is. Please feel free to fork and to modify it. If you do some improvements that might be of interest for others please create a merge request.
-
-## Disclaimer
-When running docker containers you should be aware that this might expose your computer to some threats. You do this on your own risk! I am not liable for any loss whether direct, indirect, incidental or consequential, arising out of use of this project.
-
+# Docker Setup
 ## Install docker
 
 Install the `docker` tools as explained here: https://docs.docker.com/engine/install/
@@ -32,7 +18,7 @@ After a while (and a lot of messages) you should have 3 containers running:
 - MariaDB: your database server for SQL
 - PHPmyAdmin a web-based application to modify your database 
 
-All files in the `src`-folder are linked into the apache-php container, so you can see your changes while developing in that folder. Furthermore this folder contains all examples and demos for the lecture. Everything is set up and deployed automatically.
+All files in the `src`-folder are linked into the apache-php container, so you can see your changes while developing in that folder. Everything is set up and deployed automatically.
 Note the folder `src\Log` containing the log files of the docker containers (e.g. apache log)
 
 ## Test the Installation
@@ -40,6 +26,10 @@ Note the folder `src\Log` containing the log files of the docker containers (e.g
 Go to [http://localhost](http://localhost) to check the served code. After installation you will see the content of the file `index.php` from the src-folder. 
 
 You can select a file by specifying a path starting from the src-folder to the file at the end of the URL (please be aware that the containers run on linux and linux is case sensitive).
+
+## Head to Pizza Service Project
+This project demonstrates a pizza ordering service as part of a practical web application. To access the application, navigate to the following URL in your browser: 
+[http://localhost/Praktikum/Prak5/Uebersicht.php](http://localhost/Praktikum/Prak5/Uebersicht.php)  
 
 ## Stop the Containers
 Call `docker-compose down` to stop the containers.
@@ -82,8 +72,3 @@ Note: The name of this image may vary depending on your installation. Please che
   - Please make sure that your firewall is always up and running.
   - Start the containers only when you need it.
   
-# EWA using XAMPP & Co.
-If you can not run docker you have to setup the environment for EWA yourself. You need the same setup that is used for the EWA-lab. You will find some hints on the installation in the section "Technische Hinweise" of the current EWA lab. 
-
-  Enjoy
-  Ralf Hahn, April 2024
