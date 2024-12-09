@@ -8,10 +8,16 @@ Der Pizza-Service ist eine webbasierte Anwendung. Ziel ist es, eine vollständig
 ![image info](src/Praktikum/readme-image/Kunde-seite.png)
 
 ## Table of Contents
-1. [Prerequisites](#prerequisites)
-2. [Running the Application](#running-the-application)
-3. [Stop the Application](#stop-the-application)
+1. [Technologies](#technologies)
+2. [Prerequisites](#prerequisites)
+3. [Running the Application](#running-the-application)
+4. [Stop the Application](#stop-the-application)
 
+## Technologies
+- **HTML5**: Semantische und standardkonforme Strukturierung der Webseiten.
+- **CSS3**: Gestaltung und responsives Design für alle Endgeräte.
+- **JavaScript**: Dynamische Nutzerinteraktion und Inhaltsaktualisierung.
+- **AJAX**: Asynchrone Serverkommunikation ohne Seitenreload.
 
 ## Prerequisites
 
